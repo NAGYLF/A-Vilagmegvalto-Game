@@ -1,0 +1,108 @@
+body {
+    background-image: url('https://wallpapercave.com/wp/wp8986311.jpg'); /* Háttérkép */
+    background-size: cover; /* Háttérkép méretezése */
+    background-position: center; /* Középre igazítás */
+    color: rgb(227, 210, 16); /* Fehér szöveg */
+    font-family: Arial, sans-serif; /* Betűtípus */
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.sidebar {
+    width: 200px; /* Oldalsáv szélessége */
+    background-color: rgba(0, 0, 0, 0.7); /* Fekete átlátszó háttér */
+    padding: 20px;
+    position: fixed; /* Oldalsáv rögzítése */
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Árnyék az oldalsáv körül */
+}
+
+.sidebar ul {
+    list-style-type: none; /* Lista pontok eltüntetése */
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0; /* Lista elemek közötti távolság */
+}
+
+.sidebar ul li a {
+    color: white; /* Fehér szöveg a linkeknek */
+    text-decoration: none; /* Aláhúzás eltüntetése */
+    font-size: 1.2em; /* Betűméret */
+}
+
+.sidebar ul li a:hover {
+    color: #ff69b4; /* Rózsaszín hover effektus */
+}
+
+.container {
+    position: absolute; /* Állandó pozíció */
+    top: 50%; /* Felfelé középre helyezés */
+    left: 50%; /* Balra középre helyezés */
+    transform: translate(-50%, -50%); /* Középre igazítás */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Lekerekített sarkok */
+    background-color: rgba(0, 0, 0, 0.5); /* Fekete átlátszó háttér */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff69b4; /* Rózsaszín gomb */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff1493; /* Sötétebb rózsaszín hover effektus */
+}
+
+.auth-buttons {
+    position: absolute; /* Pozicionálás a jobb felső sarokhoz */
+    top: 20px;
+    right: 20px;
+}
+
+.auth-buttons button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-left: 10px; /* Közötti távolság */
+    transition: background-color 0.3s;
+}
+
+.login-button {
+    background-color: #6a0dad; /* Lila háttér */
+}
+
+.register-button {
+    background-color: white; /* Fehér háttér */
+    color: black!important; /* Lila szöveg */
+}
+
+.login-button:hover {
+    background-color: #b01193; /* Sötétebb rózsaszín hover effektus */
+}
+
+.register-button:hover {
+    background-color: #e0e0e0; /* Szürke hover effektus */
+}
