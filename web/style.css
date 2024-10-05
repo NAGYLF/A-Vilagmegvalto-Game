@@ -106,3 +106,26 @@ p {
 .register-button:hover {
     background-color: #e0e0e0; /* Szürke hover effektus */
 }
+.centered-image {
+    position: absolute;
+    top: 20px; /* Távolság a tetejétől */
+    left: 50%; /* Bal oldal középre igazítása */
+    transform: translateX(-50%); /* Vízszintes középre igazítás */
+    z-index: 1000; /* A legfelső rétegbe helyezés, hogy minden fölött legyen */
+}
+
+.sidebar ul li:first-child a {
+    pointer-events: none; /* Kattintás tiltása */
+    color: grey; /* Vizuális megjelenítés, hogy inaktív legyen */
+}
+
+.bottom-right-image {
+    position: fixed;
+    bottom: 20px; /* Távolság az aljától */
+    right: 20px; /* Távolság a jobb oldaltól */
+    width: 100px; /* A kép szélessége */
+    height: auto; /* Arányos méretezés */
+    cursor: pointer; /* Mutatóvá változtatás, hogy látszódjon, kattintható */
+    z-index: 1000; /* Legfelső rétegbe helyezés, hogy minden fölött legyen */
+}
+
